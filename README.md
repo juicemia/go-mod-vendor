@@ -25,4 +25,5 @@ This flow gets annoying to type, so I put it into a shell script.
 
 ```
 $ curl -o $SOMEWHEREINYOURPATH/go-mod-vendor https://raw.githubusercontent.com/juicemia/go-mod-vendor/master/go-mod-vendor
+$ chmod 755 $SOMEWHEREINYOURPATH/go-mod-vendor
 ```
