@@ -20,3 +20,9 @@ Fast forward a couple of days and I decided to try and see if this would work
 for me. Sure enough, I was able to vendor everything and my tooling works.
 
 This flow gets annoying to type, so I put it into a shell script.
+
+## Quick Start
+
+```
+$ curl -o $SOMEWHEREINYOURPATH/go-mod-vendor https://raw.githubusercontent.com/juicemia/go-mod-vendor/master/go-mod-vendor
+```
