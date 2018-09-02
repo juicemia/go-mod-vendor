@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+echo "[go-mod-vendor] enabling GO111MODULE..."
+export GO111MODULE=on
+
+echo "[go-mod-vendor] initializing and vendoring..."
+go mod init
+go mod tidy
+go mod vendor
+
+echo "[go-mod-vendor] disabling GO111MODULE..."
+unset GO111MODULE
+
+echo "[go-mod-vendor] cleaning up..."
+rm go.mod go.sum
+
+echo "[go-mod-vendor] done!"
